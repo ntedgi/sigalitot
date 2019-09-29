@@ -67,7 +67,6 @@ export default class Demo extends React.Component {
     render() {
         let { columns } = this.state
         let data = this.props;
-        debugger
         return <Table rowKey="id" columns={columns} data={data.data} />
     }
 }
