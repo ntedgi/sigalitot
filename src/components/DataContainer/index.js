@@ -17,7 +17,6 @@ export default class DataContainer extends Component {
     }
 
     onFilterSelected = (fn) => {
-        console.log(":asdasd")
         this.setState({ filterfn: fn })
     }
     render() {

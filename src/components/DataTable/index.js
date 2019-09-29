@@ -4,6 +4,7 @@ import Demo from './example'
 export default class DataTable extends Component {
     prapareData = (apartments, filterfn) => {
         let result = []
+        debugger
         if (filterfn) {
             let data = apartments.filter(e => filterfn(e))
             data.forEach(element => {
@@ -31,7 +32,7 @@ export default class DataTable extends Component {
         const formated = this.prapareData(apartments,filterfn)
         return (
             <div>
-                <h2 key={`${b_title}1`}>{b_title}</h2>
+                <h2 key={`${b_title}1`}>{`building number :${b_title}`}</h2>
                 <h2 key={`${b_title}2`}>{`availble apartments ${formated.length}`}</h2>
                 <Demo  data={formated} />
             </div>
