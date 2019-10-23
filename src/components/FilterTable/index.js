@@ -183,6 +183,7 @@ fuzzyTextFilterFn.autoRemove = val => !val
 function Table({ columns, data }) {
     const filterTypes = React.useMemo(
         () => ({
+
             // Add a new fuzzyTextFilterFn filter type.
             fuzzyText: fuzzyTextFilterFn,
             // Or, override the default text filter to use
@@ -224,6 +225,10 @@ function Table({ columns, data }) {
 
     return (
         <>
+            <br />
+            <div>Total of : {rows.length} result found for your search.</div>
+            <br />
+
             <div>
             </div>
             <table {...getTableProps()}>
@@ -255,14 +260,14 @@ function Table({ columns, data }) {
                     )}
                 </tbody>
             </table>
-            <br />
-            <div>Showing the first {rows.length} results of {rows.length} rows</div>
+
         </>
     )
 }
 
 // Define a custom filter filter function!
 function filterGreaterThan(rows, id, filterValue) {
+
     return rows.filter(row => {
         const rowValue = row.values[id]
         return rowValue >= filterValue
@@ -281,6 +286,10 @@ function App({ data }) {
             Header: 'נתוני משכנתא - לפי הון עצמי',
             columns: [
                 {
+                    Header: 'הון עצמי ידני%',
+                    accessor: 'st0',
+                },
+                {
                     Header: '25%',
                     accessor: 'st1',
                 },
@@ -288,7 +297,7 @@ function App({ data }) {
                     Header: '30%',
                     accessor: 'st2',
                 }
-               
+
             ],
         },
         {
@@ -298,7 +307,10 @@ function App({ data }) {
             columns: [
                 {
                     Header: 'price',
-                    accessor: 'price'
+                    accessor: 'price',
+                    Filter:NumberRangeColumnFilter,
+                    filter: 'between',
+
                 },
                 {
                     Header: 'discription',
@@ -315,7 +327,11 @@ function App({ data }) {
                 {
                     Header: 'number',
                     accessor: 'number',
-
+                    Cell: row => {
+                        let rowParts = row.cell.value.split("**")
+                        return (
+                            <a href={rowParts[1]} target="_blank" >{rowParts[0]}</a>)
+                    }
                 },
                 {
                     Header: 'floor',
