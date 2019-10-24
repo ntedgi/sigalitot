@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sigalitot/static/css/main.d9d98666.chunk.css",
-    "main.js": "/sigalitot/static/js/main.28f4a1bc.chunk.js",
-    "main.js.map": "/sigalitot/static/js/main.28f4a1bc.chunk.js.map",
+    "main.js": "/sigalitot/static/js/main.4ff23edd.chunk.js",
+    "main.js.map": "/sigalitot/static/js/main.4ff23edd.chunk.js.map",
     "runtime-main.js": "/sigalitot/static/js/runtime-main.6d02ee4a.js",
     "runtime-main.js.map": "/sigalitot/static/js/runtime-main.6d02ee4a.js.map",
     "static/js/2.c20f7f17.chunk.js": "/sigalitot/static/js/2.c20f7f17.chunk.js",
     "static/js/2.c20f7f17.chunk.js.map": "/sigalitot/static/js/2.c20f7f17.chunk.js.map",
     "index.html": "/sigalitot/index.html",
-    "precache-manifest.761fa680aff3fc8b306e84738b6eb53c.js": "/sigalitot/precache-manifest.761fa680aff3fc8b306e84738b6eb53c.js",
+    "precache-manifest.eb6a25b57477c80cd84999fa54e8f295.js": "/sigalitot/precache-manifest.eb6a25b57477c80cd84999fa54e8f295.js",
     "service-worker.js": "/sigalitot/service-worker.js",
     "static/css/main.d9d98666.chunk.css.map": "/sigalitot/static/css/main.d9d98666.chunk.css.map",
     "static/media/migrash.png": "/sigalitot/static/media/migrash.440806ec.png"

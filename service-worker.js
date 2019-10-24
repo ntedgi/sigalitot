@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sigalitot/precache-manifest.761fa680aff3fc8b306e84738b6eb53c.js"
+  "/sigalitot/precache-manifest.eb6a25b57477c80cd84999fa54e8f295.js"
 );
 
 self.addEventListener('message', (event) => {

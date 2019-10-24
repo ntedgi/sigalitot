@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9e8d9cd785444e770133006778e3107",
+    "revision": "202b5e4390a18747f0d4b4465d5e0d49",
     "url": "/sigalitot/index.html"
   },
   {
-    "revision": "7fb42681ac034bbfb5aa",
+    "revision": "a2f092c1a626620c690f",
     "url": "/sigalitot/static/css/main.d9d98666.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sigalitot/static/js/2.c20f7f17.chunk.js"
   },
   {
-    "revision": "7fb42681ac034bbfb5aa",
-    "url": "/sigalitot/static/js/main.28f4a1bc.chunk.js"
+    "revision": "a2f092c1a626620c690f",
+    "url": "/sigalitot/static/js/main.4ff23edd.chunk.js"
   },
   {
     "revision": "0f1e6aac9ae7622c4a0c",
