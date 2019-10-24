@@ -18,8 +18,12 @@ export default class DataContainer extends Component {
   }
 
   componentDidMount () {
+    const corsuri ='https://cors-anywhere.herokuapp.com/'
+    const uri1 = '/%D7%AA%D7%9B%D7%A0%D7%99%D7%95%D7%AA-%D7%93%D7%99%D7%A8%D7%94/?json'
+    const uri2 =`${corsuri}http://sigaliot.mishtaken.info${uri1}`
+    debugger
     fetch(
-      '/%D7%AA%D7%9B%D7%A0%D7%99%D7%95%D7%AA-%D7%93%D7%99%D7%A8%D7%94/?json',
+      uri2,
       {
         headers: {
           'content-type': 'application/json'
@@ -32,6 +36,7 @@ export default class DataContainer extends Component {
         return response.text()
       })
       .then(data => {
+        debugger
         this.setState({
           data: JSON.parse(data)[0],
           types: JSON.parse(data)[4]
